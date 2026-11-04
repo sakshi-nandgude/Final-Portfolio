@@ -1,0 +1,213 @@
+// ─────────────────────────────────────────────────────────────
+// PROJECTS: add a new project by copying one block into the list.
+// Order in this file = order on the page.
+//
+// Required: title, tags (array), summary, tech (array), details (array)
+// Optional: status ("In progress"), highlight (short line, e.g. "1st place"),
+//           github, live (URLs: buttons only show when filled in)
+//
+// The filter chips on the page are built from `tags` automatically,
+// so a new tag you invent shows up as a new filter.
+// ─────────────────────────────────────────────────────────────
+export const projects = [
+  {
+    title: "AFL Performance Analytics Portal",
+    tags: ["Data Engineering", "Analytics", "Software"],
+    summary:
+      "End-to-end cloud sports analytics platform: a Python ETL pipeline loads AFL data into PostgreSQL, a FastAPI backend serves it, and a React dashboard visualises team and player performance.",
+    tech: ["React", "FastAPI", "Python", "PostgreSQL", "Azure", "Docker", "GitHub Actions"],
+    github: "",
+    live: "",
+    details: [
+      "Designed and developed an end-to-end cloud-based sports analytics platform using React, FastAPI, Azure Database for PostgreSQL, and SQLAlchemy to process and visualize Australian Football League (AFL) data.",
+      "Built a modular ETL (Extract, Transform, Load) pipeline in Python to extract, clean, transform, validate, and load AFL datasets into a relational PostgreSQL database, including synthetic data generation for development and testing.",
+      "Developed RESTful APIs using FastAPI to expose dashboard, team, and player analytics, with interactive API documentation generated through Swagger/OpenAPI.",
+      "Designed and optimized a relational database schema with SQLAlchemy ORM, enabling efficient analytical queries and structured data management.",
+      "Built a responsive frontend using React, Vite, Axios, and Tailwind CSS, integrating backend APIs to deliver interactive dashboards and performance metrics.",
+      "Containerized the application using Docker and Docker Compose to provide consistent development environments and support future container-based deployments.",
+      "Implemented CI/CD using GitHub Actions and deployed the backend to Microsoft Azure App Service, connecting securely to Azure Database for PostgreSQL using environment variables.",
+      "Diagnosed and resolved real-world cloud deployment challenges, including application startup configuration, dependency management, CORS configuration, and production deployment troubleshooting on Azure.",
+    ],
+  },
+  {
+    title: "Finance Risk & Profitability Analytics Platform",
+    status: "In progress",
+    tags: ["Data Engineering", "Analytics", "Business Intelligence"],
+    summary:
+      "Medallion-architecture financial analytics platform on Databricks covering customers, transactions, loans, risk and profitability, with Power BI dashboards on top.",
+    tech: ["Databricks", "PySpark", "SQL", "Delta Lake", "Power BI", "Azure"],
+    github: "",
+    live: "",
+    details: [
+      "Developing an end-to-end financial analytics platform on Databricks using PySpark, SQL, Delta Lake and Unity Catalog concepts, following a medallion architecture to support customer, transaction, loan, risk and profitability analytics.",
+      "Designed a relational finance data model covering customers, accounts, transactions, loans, loan payments, products and branches, with defined entity relationships, data grain and business KPIs for financial performance and credit-risk analysis.",
+      "Built a reproducible PySpark synthetic-data generation pipeline covering 10,000 customers, 15,000 accounts and 500,000 transactions across two years, with controlled relationships and referential-integrity validation.",
+      "Implementing Bronze, Silver and Gold data layers for raw ingestion, data cleansing, validation, transformation and business-ready analytical modelling using Delta tables.",
+      "Applying SQL and PySpark transformations, joins, aggregations and data-quality checks to prepare reliable datasets for financial reporting, customer profitability, transaction analysis and loan-risk analytics.",
+      "Developing Power BI semantic models and interactive dashboards with Power Query and DAX to analyse revenue, loan portfolio performance, customer profitability, defaults, delinquency and risk trends.",
+      "Version-controlling notebooks, SQL and project documentation through Git/GitHub, using structured commits and reproducible development practices; planned orchestration through Databricks Workflows and Azure Data Factory.",
+    ],
+  },
+  {
+    title: "Big Data Loan Default Prediction",
+    tags: ["Machine Learning", "Data Engineering"],
+    summary:
+      "Distributed loan default prediction over more than one million LendingClub records, comparing five models with Spark ML pipelines.",
+    tech: ["Apache Spark", "PySpark", "Spark MLlib", "Jupyter Notebook", "Python"],
+    github: "",
+    live: "",
+    details: [
+      "Built a large-scale loan default prediction system using Apache Spark and PySpark.",
+      "Processed over one million LendingClub loan records using distributed data processing.",
+      "Performed feature engineering, missing value treatment, and class imbalance handling.",
+      "Developed machine learning models including Logistic Regression, Random Forest, Decision Tree, Gradient Boosted Trees (GBT), and Linear SVC.",
+      "Optimized Spark pipelines using caching, repartitioning, and distributed transformations.",
+      "Evaluated models using Accuracy, Precision, Recall, F1-score, ROC-AUC, and PR-AUC.",
+      "Conducted exploratory data analysis to identify important financial risk factors.",
+      "Implemented scalable ML workflows using Spark ML pipelines.",
+      "Improved predictive performance through hyperparameter tuning and model evaluation.",
+    ],
+  },
+  {
+    title: "Country Economic Stress Analysis",
+    tags: ["Analytics", "Machine Learning"],
+    summary:
+      "Cross-country analysis of inflation, GDP growth, unemployment and debt, with predictive models to flag economic stress patterns.",
+    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+    github: "",
+    live: "",
+    details: [
+      "Developed a data analytics project to assess economic stress indicators across multiple countries.",
+      "Performed extensive data cleaning, preprocessing, and feature engineering on macroeconomic datasets.",
+      "Conducted exploratory data analysis (EDA) to identify economic trends and country-level variations.",
+      "Built predictive machine learning models to evaluate economic stress patterns.",
+      "Generated visualizations using Matplotlib and Seaborn to communicate analytical insights.",
+      "Compared economic indicators including inflation, GDP growth, unemployment, and debt levels.",
+      "Applied statistical techniques for correlation and feature importance analysis.",
+      "Documented findings using reproducible Jupyter Notebook workflows.",
+      "Improved understanding of economic risk factors through data-driven analysis.",
+    ],
+  },
+  {
+    title: "Hotel Booking Analysis",
+    tags: ["Analytics"],
+    summary:
+      "End-to-end exploratory analysis of hotel booking data covering cancellations, seasonal demand and customer segments.",
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook"],
+    github: "",
+    live: "",
+    details: [
+      "Performed end-to-end exploratory data analysis on hotel booking datasets.",
+      "Cleaned missing values, handled duplicates, and transformed data for analysis.",
+      "Analyzed booking cancellations, seasonal demand, customer segments, and hotel performance.",
+      "Created insightful visualizations using Matplotlib and Seaborn.",
+      "Identified booking trends and business patterns through statistical analysis.",
+      "Applied feature engineering techniques for predictive modeling.",
+      "Used Python libraries to generate actionable business insights.",
+      "Documented findings using Jupyter Notebook for reproducibility.",
+      "Demonstrated practical data analytics and visualization skills.",
+    ],
+  },
+  {
+    title: "SimVenture Bicycle Business Simulation",
+    highlight: "1st place",
+    tags: ["Business Intelligence", "Analytics"],
+    summary:
+      "Won the SimVenture challenge by running a simulated bicycle business on data-driven pricing, product and financial decisions.",
+    tech: ["Business Strategy", "Financial Analysis", "Competitive Decision-Making", "Scenario Analysis"],
+    github: "",
+    live: "",
+    details: [
+      "Secured 1st place in the SimVenture business simulation challenge, outperforming competing teams through data-driven strategic and financial decision-making.",
+      "Managed a simulated bicycle business across multiple decision periods, developing and executing strategies covering pricing, product design, production, sales, marketing and financial management.",
+      "Analysed profitability, cash flow, expenditure, order volumes, sales performance, net assets and company value to evaluate business performance and identify areas for improvement.",
+      "Made quarterly evidence-based business decisions by assessing market conditions, competitor behaviour, operational performance and financial trade-offs.",
+      "Optimised pricing and product decisions to balance sales volume, profitability, market competitiveness and cash requirements.",
+      "Evaluated the financial impact of production and operational decisions, considering trade-offs between short-term cash position and longer-term business value.",
+      "Monitored key business performance indicators and compared results across periods to identify trends, diagnose underperformance and refine subsequent strategies.",
+      "Applied scenario analysis and strategic planning to anticipate the impact of changing business decisions on revenue, costs, profitability and company valuation.",
+      "Demonstrated practical understanding of business strategy, financial analysis, competitive positioning, operations management and data-driven decision-making in a dynamic simulated market environment.",
+      "Translated quantitative performance data into actionable commercial decisions, combining analytical thinking with business judgement to maximise overall company performance.",
+    ],
+  },
+  {
+    title: "Modern E-Commerce Platform",
+    tags: ["Software"],
+    summary:
+      "Secure REST backend for an online store, with a normalised MySQL schema, JWT authentication and role-based access.",
+    tech: ["Node.js", "Express.js", "MySQL", "JWT", "REST APIs", "Postman", "Git"],
+    github: "",
+    live: "",
+    details: [
+      "Developed a secure RESTful e-commerce backend using Node.js and Express.js.",
+      "Designed a normalized MySQL database schema for users, products, orders, and shopping carts.",
+      "Implemented JWT-based authentication and role-based authorization for secure access control.",
+      "Built CRUD APIs for product management, order processing, and user operations.",
+      "Applied middleware for request validation, authentication, and centralized error handling.",
+      "Tested APIs using Postman and followed REST API best practices.",
+      "Structured the application using modular MVC architecture.",
+      "Managed source code using Git with version control best practices.",
+      "Improved backend scalability through reusable services and modular routing.",
+    ],
+  },
+  {
+    title: "URL Shortener Application",
+    tags: ["Software"],
+    summary:
+      "Full-stack URL shortener with user accounts, protected routes and redirects, deployed across Vercel and Render.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Vercel", "Render", "Git"],
+    github: "",
+    live: "",
+    details: [
+      "Developed a full-stack URL shortening application with secure user authentication.",
+      "Built RESTful APIs using Node.js and Express.js for URL generation and management.",
+      "Integrated MongoDB for persistent storage of shortened URLs and user information.",
+      "Implemented JWT authentication and protected routes for secure access.",
+      "Developed a responsive React frontend with an intuitive user interface.",
+      "Generated unique short URLs and implemented redirection functionality.",
+      "Deployed the backend on Render and frontend on Vercel.",
+      "Used Git for version control and followed modular application architecture.",
+      "Improved user experience through efficient API integration and responsive design.",
+    ],
+  },
+  {
+    title: "Image Processing Application",
+    tags: ["Software"],
+    summary:
+      "Backend service for uploading, transforming and storing images on AWS S3, covered by automated API tests.",
+    tech: ["Node.js", "Express.js", "MongoDB", "AWS S3", "Multer", "Sharp", "Jest", "Supertest", "Git"],
+    github: "",
+    live: "",
+    details: [
+      "Developed a backend image processing service supporting image upload, transformation, and storage.",
+      "Implemented image resizing, cropping, compression, and format conversion using Sharp.",
+      "Integrated AWS S3 for scalable cloud-based image storage.",
+      "Built secure REST APIs with JWT authentication and protected routes.",
+      "Managed multipart file uploads using Multer middleware.",
+      "Developed automated API tests using Jest and Supertest.",
+      "Applied modular backend architecture with reusable services and middleware.",
+      "Implemented robust error handling and input validation.",
+      "Optimized image processing workflows for improved performance and scalability.",
+    ],
+  },
+  {
+    title: "Automated Backup Script",
+    tags: ["Software"],
+    summary:
+      "Cron-scheduled shell script that validates directories, creates timestamped backups, and logs every run.",
+    tech: ["Bash", "Linux Shell", "Cron Jobs", "File System", "Git"],
+    github: "",
+    live: "",
+    details: [
+      "Developed an automated shell script to back up files and directories securely.",
+      "Implemented timestamp-based backup naming for version management.",
+      "Automated backup execution using Linux cron scheduling.",
+      "Performed directory validation and file existence checks before backup execution.",
+      "Improved system reliability by reducing manual backup operations.",
+      "Applied Linux shell scripting concepts including loops, variables, conditions, and functions.",
+      "Added logging and error handling for improved maintainability.",
+      "Optimized backup execution for minimal system resource usage.",
+      "Demonstrated Linux system administration and scripting automation skills.",
+    ],
+  },
+];
