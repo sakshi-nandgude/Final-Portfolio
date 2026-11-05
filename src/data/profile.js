@@ -42,7 +42,7 @@ export const profile = {
     { label: "degree", value: "BCA, 9.32 CGPA, First Class with Distinction" },
     { label: "stack", value: "Python · SQL · Power BI · Spark · Azure" },
     { label: "based in", value: "Limerick, Ireland" },
-    { label: "work auth", value: "Stamp 2 (Stamp 1G after course completion)" },
+    { label: "work auth", value: "work authorised Stamp 1G"},
   ],
 };
 
