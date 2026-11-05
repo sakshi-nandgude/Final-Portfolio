@@ -38,8 +38,8 @@ export const profile = {
   snapshot: [
     { label: "role", value: "Data Analyst · Analytics Engineer · Data Engineer" },
     { label: "now", value: "AFL Analyst, Stats Perform" },
-    { label: "studying", value: "MSc Business Analytics, University of Limerick (2026)" },
-    { label: "degree", value: "BCA, 9.32 CGPA, First Class with Distinction" },
+    { label: "Masters", value: "MSc Business Analytics, University of Limerick (2026)" },
+    { label: "Bachelors", value: "BCA, 9.32 CGPA, First Class with Distinction" },
     { label: "stack", value: "Python · SQL · Power BI · Spark · Azure" },
     { label: "based in", value: "Limerick, Ireland" },
     { label: "work auth", value: "work authorised Stamp 1G"},
