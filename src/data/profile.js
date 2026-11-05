@@ -24,7 +24,7 @@ export const profile = {
   location: "Limerick, Ireland",
   email: "sakshinandgude6@gmail.com",
   phone: "+353 858083112", // set to "" to hide the phone number
-  workAuth: "Work authorised (Stamp 2). Stamp 1G after course completion.",
+  workAuth: "Work authorised Stamp 1G",
 
   links: {
     linkedin: "https://www.linkedin.com/in/sakshi-nandgude-2457a4302/",
@@ -32,7 +32,7 @@ export const profile = {
   },
 
   // File placed in the /public folder. Set to "" to hide the button.
-  resume: "/Sakshi_Nandgude_CV.pdf",
+  resume: "",
 
   // The small "result table" in the hero. Add or remove rows freely.
   snapshot: [
