@@ -30,6 +30,35 @@ export const projects = [
     ],
   },
   {
+  title: "Olist E-commerce Analytics Engineering",
+  tags: ["Data Engineering", "Analytics", "Business Intelligence"],
+  summary:
+    "End-to-end analytics engineering pipeline transforming Brazilian e-commerce data into analytics-ready models using dbt and DuckDB, with interactive Power BI dashboards for business performance analysis.",
+  tech: [
+    "SQL",
+    "dbt Core",
+    "Python",
+    "DuckDB",
+    "Power BI",
+    "DAX",
+    "Git",
+    "GitHub Actions"
+  ],
+  github: "https://github.com/sakshi-nandgude/olist-dbt-analytics",
+  live: "",
+  highlight: "Featured Project",
+  details: [
+    "Designed an end-to-end analytics engineering pipeline using Python, DuckDB and dbt Core to transform raw Brazilian e-commerce transactional data into analytics-ready datasets.",
+    "Built a layered dbt architecture comprising staging, intermediate and mart models, implementing reusable SQL transformations and dimensional data models.",
+    "Developed fact and dimension models including fct_orders, dim_customers, dim_products and mart_monthly_revenue to support structured business reporting.",
+    "Implemented generic dbt tests and custom SQL data-quality checks for delivery date validation, order revenue reconciliation and monthly order count consistency.",
+    "Configured incremental processing for the order fact model using a 30-day lookback window and delete+insert strategy.",
+    "Developed Python export scripts to generate five analytics-ready datasets from DuckDB for Power BI integration.",
+    "Built four interactive Power BI dashboards covering executive sales performance, product analytics, customer behaviour and delivery operations using DAX measures and KPIs.",
+    "Implemented GitHub Actions CI validation using synthetic DuckDB test data and generated dbt model documentation with lineage."
+  ],
+},
+  {
     title: "Finance Risk & Profitability Analytics Platform",
     status: "In progress",
     tags: ["Data Engineering", "Analytics", "Business Intelligence"],
